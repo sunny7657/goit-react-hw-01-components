@@ -1,0 +1,47 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;
+
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+  border: 1px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  color: gray;
+}
+
+.quantity {
+  color: #000000bf;
+}
