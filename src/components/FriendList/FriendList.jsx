@@ -4,7 +4,7 @@ import { FriendListItem } from './FriendListItem';
 export const FriendList = ({ friends }) => {
   return (
     <section className="section friendList">
-      <ul class="friend-list">
+      <ul className="friend-list">
         {friends.map(({ avatar, name, isOnline, id }) => (
           <FriendListItem
             key={id}
