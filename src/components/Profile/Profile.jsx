@@ -8,7 +8,7 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className="profile">
+    <div className="section profile">
       <div className="description">
         <img src={avatar} alt={username} className="avatar" />
         <h2 className="name">{username}</h2>

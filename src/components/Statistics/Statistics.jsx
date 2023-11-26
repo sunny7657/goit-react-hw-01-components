@@ -3,7 +3,7 @@ import { StatisticsItem } from './StatisticsItem';
 
 export const Statistics = ({ data, title }) => {
   return (
-    <section className="statistics">
+    <section className="section statistics">
       {title && <h2 className="statistics-title">{title}</h2>}
 
       <ul className="stat-list">
