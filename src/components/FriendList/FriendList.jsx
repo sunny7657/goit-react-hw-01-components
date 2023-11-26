@@ -1,11 +1,11 @@
-import './FriendList.css';
+import css from './FriendList.module.css';
 import { FriendListItem } from './FriendListItem';
 import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
   return (
-    <section className="section friendList">
-      <ul className="friend-list">
+    <section className="section">
+      <ul className={css.list}>
         {friends.map(({ avatar, name, isOnline, id }) => (
           <FriendListItem
             key={id}

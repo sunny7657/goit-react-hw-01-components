@@ -23,7 +23,7 @@
   background-color: bisque;
 }
 
-.stats-item {
+.item {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,31 +1,20 @@
-import './FriendList.css';
+import css from './FriendList.module.css';
 import PropTypes from 'prop-types';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li className="friend-item">
+    <li className={css.item}>
       {isOnline ? (
-        <span
-          className="friend-status"
-          style={{ backgroundColor: '#008000ab' }}
-        >
+        <span className={css.status} style={{ backgroundColor: '#008000ab' }}>
           {isOnline}
         </span>
       ) : (
-        <span
-          className="friend-status"
-          style={{ backgroundColor: '#ff0000a6' }}
-        >
+        <span className={css.status} style={{ backgroundColor: '#ff0000a6' }}>
           {isOnline}
         </span>
       )}
-      <img
-        className="friend-avatar"
-        src={avatar}
-        alt="User avatar"
-        width="48"
-      />
-      <p className="friend-name">
+      <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={css.name}>
         <b>{name}</b>
       </p>
     </li>

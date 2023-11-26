@@ -1,12 +1,12 @@
-import './Statistics.css';
+import css from './Statistics.module.css';
 
 export const StatisticsItem = ({ label, percentage }) => {
   return (
-    <li className="statistics-item">
-      <span className="label">
+    <li className={css.item}>
+      <span className={css.label}>
         <b>{label}</b>
       </span>
-      <span className="percentage">
+      <span className={css.percentage}>
         <b>{percentage}%</b>
       </span>
     </li>
